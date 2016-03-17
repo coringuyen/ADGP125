@@ -1,1 +1,9 @@
 c:\users\tran.nguyen\documents\visual studio 2015\Projects\ADGP125\ADGP125\bin\Debug\ADGP125.exe.config
+C:\Users\tran.nguyen\documents\visual studio 2015\Projects\ADGP125\ADGP125\bin\Debug\ADGP125.exe
+C:\Users\tran.nguyen\documents\visual studio 2015\Projects\ADGP125\ADGP125\bin\Debug\ADGP125.pdb
+C:\Users\tran.nguyen\documents\visual studio 2015\Projects\ADGP125\ADGP125\obj\Debug\ADGP125.csprojResolveAssemblyReference.cache
+C:\Users\tran.nguyen\documents\visual studio 2015\Projects\ADGP125\ADGP125\obj\Debug\ADGP125.Form1.resources
+C:\Users\tran.nguyen\documents\visual studio 2015\Projects\ADGP125\ADGP125\obj\Debug\ADGP125.Properties.Resources.resources
+C:\Users\tran.nguyen\documents\visual studio 2015\Projects\ADGP125\ADGP125\obj\Debug\ADGP125.csproj.GenerateResource.Cache
+C:\Users\tran.nguyen\documents\visual studio 2015\Projects\ADGP125\ADGP125\obj\Debug\ADGP125.exe
+C:\Users\tran.nguyen\documents\visual studio 2015\Projects\ADGP125\ADGP125\obj\Debug\ADGP125.pdb
