@@ -1,0 +1,21 @@
+<SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Body>
+<a1:Player id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/ADGP125/ADGP125%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<characterType href="#ref-3"/>
+<playerOrder href="#ref-4"/>
+<numberofPlayer>4</numberofPlayer>
+</a1:Player>
+<SOAP-ENC:Array id="ref-3" SOAP-ENC:arrayType="xsd:string[4]">
+<item id="ref-5">Warrior</item>
+<item id="ref-6">Mage</item>
+<item id="ref-7">Healer</item>
+<item id="ref-8">Archer</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-4" SOAP-ENC:arrayType="xsd:string[4]">
+<item id="ref-9">Player0</item>
+<item id="ref-10">Player1</item>
+<item id="ref-11">Player2</item>
+<item id="ref-12">Player3</item>
+</SOAP-ENC:Array>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

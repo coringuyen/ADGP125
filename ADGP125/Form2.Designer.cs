@@ -28,34 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Name = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.colorDialog2 = new System.Windows.Forms.ColorDialog();
+            this.Enemy = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // Name
+            // Enemy
             // 
-            this.Name.AutoSize = true;
-            this.Name.Location = new System.Drawing.Point(34, 49);
-            this.Name.Name = "Name";
-            this.Name.Size = new System.Drawing.Size(35, 13);
-            this.Name.TabIndex = 0;
-            this.Name.Text = "Name";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(37, 65);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(160, 26);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
+            this.Enemy.AutoSize = true;
+            this.Enemy.Location = new System.Drawing.Point(106, 36);
+            this.Enemy.Name = "Enemy";
+            this.Enemy.Size = new System.Drawing.Size(86, 13);
+            this.Enemy.TabIndex = 0;
+            this.Enemy.Text = "Enemy Selection";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(260, 291);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.Name);
+            this.ClientSize = new System.Drawing.Size(319, 366);
+            this.Controls.Add(this.Enemy);
             this.Name = "Form2";
             this.Text = "Form2";
             this.ResumeLayout(false);
@@ -64,8 +56,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label Name;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.ColorDialog colorDialog2;
+        private System.Windows.Forms.Label Enemy;
     }
 }

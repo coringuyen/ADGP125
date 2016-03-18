@@ -13,7 +13,7 @@ namespace ADGP125
 
     interface IDamager
     {
-
+        
     }
 
 }

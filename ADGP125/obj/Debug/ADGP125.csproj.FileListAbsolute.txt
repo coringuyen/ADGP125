@@ -7,3 +7,4 @@ C:\Users\tran.nguyen\documents\visual studio 2015\Projects\ADGP125\ADGP125\obj\D
 C:\Users\tran.nguyen\documents\visual studio 2015\Projects\ADGP125\ADGP125\obj\Debug\ADGP125.csproj.GenerateResource.Cache
 C:\Users\tran.nguyen\documents\visual studio 2015\Projects\ADGP125\ADGP125\obj\Debug\ADGP125.exe
 C:\Users\tran.nguyen\documents\visual studio 2015\Projects\ADGP125\ADGP125\obj\Debug\ADGP125.pdb
+C:\Users\tran.nguyen\documents\visual studio 2015\Projects\ADGP125\ADGP125\obj\Debug\ADGP125.Form2.resources
