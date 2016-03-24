@@ -19,6 +19,7 @@ namespace ADGP125
         {
             InitializeComponent();
             //load();
+            Addlabel_addComboBox();
         }
         
 
@@ -31,10 +32,8 @@ namespace ADGP125
         List<Label> playersLabel = new List<Label>();
         List<ComboBox> playersSelection = new List<ComboBox>();
 
-        private void CreatePlayer_Click(object sender, EventArgs e)
+        private void Addlabel_addComboBox()
         {
-            int numberofPlayer = int.Parse(PlayerNumber.Text);
-
             playersLabel.Add(Player1);
             playersLabel.Add(Player2);
             playersLabel.Add(Player3);
@@ -44,41 +43,52 @@ namespace ADGP125
             playersSelection.Add(Player2Selection);
             playersSelection.Add(Player3Selection);
             playersSelection.Add(Player4Selection);
+        }
 
-            for (int i = 0; i < numberofPlayer; ++i)
+        private void CreatePlayer_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 4; ++i)
             {
                 Label playerlabel = playersLabel[i];
-                playerlabel.Visible = true;
-
+                playerlabel.Visible = false;
                 ComboBox playerSelection = playersSelection[i];
-                playerSelection.Visible = true;
-                playerSelection.Text = null;
+                playerSelection.Visible = false;
             }
 
-           
+            if (PlayerNumber.Text != null)
+            {
+                int numberofPlayer = int.Parse(PlayerNumber.Text);
+
+                for (int i = 0; i < numberofPlayer; ++i)
+                {
+                    Label playerlabel = playersLabel[i];
+                    playerlabel.Visible = true;
+
+                    ComboBox playerSelection = playersSelection[i];
+                    playerSelection.Visible = true;
+                    playerSelection.Text = null;
+                }
+            }
         }
 
         private void Play_Click(object sender, EventArgs e)
         {
             int numberofPlayer = int.Parse(PlayerNumber.Text);
             string[] player_type = new string[numberofPlayer];
-            string[] player_order = new string[numberofPlayer];
 
             for (int i = 0; i < numberofPlayer; ++i)
             {
-                string player = "Player" + i;
                 ComboBox playerSelection = playersSelection[i];
-                player_order[i] = player;
                 player_type[i] = playerSelection.Text;
             }
 
-
-            user = new Player(numberofPlayer, player_type, player_order);
+            user = new Player(numberofPlayer, player_type);
             SerializeUser.Serialize("UserInfo.xml", user);
-            
+
             Form2 f = new Form2();
             this.Hide();
             f.Show();
+            
         }
     }
 }

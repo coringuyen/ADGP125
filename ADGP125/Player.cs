@@ -10,13 +10,11 @@ namespace ADGP125
     class Player
     {
         private string[] characterType;
-        private string[] playerOrder;
         private int numberofPlayer;
 
-        public Player(int number_of_player, string[] Type, string[] PlayerOrder)
+        public Player(int number_of_player, string[] Type)
         {
             characterType = Type;
-            playerOrder = PlayerOrder; 
             numberofPlayer = number_of_player;
         }
     }
