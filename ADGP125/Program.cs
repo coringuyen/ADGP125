@@ -16,7 +16,7 @@ namespace ADGP125
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            new Form1().Show();
+            new Login().Show();
             Application.Run();
         }
     }
