@@ -46,11 +46,11 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.UserNameTextBox = new System.Windows.Forms.RichTextBox();
+            this.Mage = new System.Windows.Forms.Label();
+            this.Warrior = new System.Windows.Forms.Label();
+            this.Healer = new System.Windows.Forms.Label();
+            this.Archer = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -243,61 +243,61 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "UserName";
             // 
-            // richTextBox1
+            // UserNameTextBox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(79, 67);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(123, 22);
-            this.richTextBox1.TabIndex = 19;
-            this.richTextBox1.Text = "";
+            this.UserNameTextBox.Location = new System.Drawing.Point(79, 67);
+            this.UserNameTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.UserNameTextBox.Name = "UserNameTextBox";
+            this.UserNameTextBox.Size = new System.Drawing.Size(123, 22);
+            this.UserNameTextBox.TabIndex = 19;
+            this.UserNameTextBox.Text = "";
             // 
-            // label2
+            // Mage
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(320, 337);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 13);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Mage";
+            this.Mage.AutoSize = true;
+            this.Mage.Location = new System.Drawing.Point(330, 337);
+            this.Mage.Name = "Mage";
+            this.Mage.Size = new System.Drawing.Size(34, 13);
+            this.Mage.TabIndex = 20;
+            this.Mage.Text = "Mage";
             // 
-            // label3
+            // Warrior
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(515, 337);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "Warrior";
+            this.Warrior.AutoSize = true;
+            this.Warrior.Location = new System.Drawing.Point(526, 337);
+            this.Warrior.Name = "Warrior";
+            this.Warrior.Size = new System.Drawing.Size(41, 13);
+            this.Warrior.TabIndex = 21;
+            this.Warrior.Text = "Warrior";
             // 
-            // label4
+            // Healer
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(697, 337);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 13);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Healer";
+            this.Healer.AutoSize = true;
+            this.Healer.Location = new System.Drawing.Point(709, 337);
+            this.Healer.Name = "Healer";
+            this.Healer.Size = new System.Drawing.Size(38, 13);
+            this.Healer.TabIndex = 22;
+            this.Healer.Text = "Healer";
             // 
-            // label5
+            // Archer
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(888, 337);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 13);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "UserName";
+            this.Archer.AutoSize = true;
+            this.Archer.Location = new System.Drawing.Point(888, 337);
+            this.Archer.Name = "Archer";
+            this.Archer.Size = new System.Drawing.Size(38, 13);
+            this.Archer.TabIndex = 23;
+            this.Archer.Text = "Archer";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 557);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.Archer);
+            this.Controls.Add(this.Healer);
+            this.Controls.Add(this.Warrior);
+            this.Controls.Add(this.Mage);
+            this.Controls.Add(this.UserNameTextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Submit);
             this.Controls.Add(this.pictureBox4);
@@ -345,11 +345,11 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.RichTextBox UserNameTextBox;
+        private System.Windows.Forms.Label Mage;
+        private System.Windows.Forms.Label Warrior;
+        private System.Windows.Forms.Label Healer;
+        private System.Windows.Forms.Label Archer;
     }
 }
 

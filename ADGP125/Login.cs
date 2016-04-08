@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace ADGP125
 {
@@ -17,7 +18,29 @@ namespace ADGP125
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void RegisterButton_Click(object sender, EventArgs e)
+        {
+            Form1 register = new Form1();
+            this.Hide();
+            register.Show();
+        }
+
+        private void LoginButton_Click(object sender, EventArgs e)
+        {
+            if(File.Exists(@"..\..\SavedFiles\" + UseNameTextBox.Text + ".xml") == false)
+            {
+                Invalid.Visible = true;
+            }
+            else
+            {
+                Invalid.Visible = false;
+                Form2 enemyState = new Form2();
+                this.Hide();
+                enemyState.Show();
+            }
+        }
+
+        private void Invalid_Click(object sender, EventArgs e)
         {
 
         }

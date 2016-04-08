@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ADGP125
 {
-    public partial class Combat : Form
+    public partial class HealthLabel : Form
     {
-        public Combat()
+        public HealthLabel()
         {
             InitializeComponent();
         }

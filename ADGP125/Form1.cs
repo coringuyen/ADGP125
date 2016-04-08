@@ -18,7 +18,6 @@ namespace ADGP125
         public Form1()
         {
             InitializeComponent();
-            //load();
             Addlabel_addComboBox();
         }
         
@@ -26,7 +25,6 @@ namespace ADGP125
         private void load(object sender, EventArgs e)
         {
             user = SerializeUser.Deserialize("UserInfo.bin");
-            //label1.Text = user.Name;
         }
 
         List<Label> playersLabel = new List<Label>();
@@ -49,10 +47,8 @@ namespace ADGP125
         {
             for (int i = 0; i < 4; ++i)
             {
-                Label playerlabel = playersLabel[i];
-                playerlabel.Visible = false;
-                ComboBox playerSelection = playersSelection[i];
-                playerSelection.Visible = false;
+                playersLabel[i].Visible = false;
+                playersSelection[i].Visible = false;
             }
 
             if (PlayerNumber.Text != null)
@@ -61,12 +57,10 @@ namespace ADGP125
 
                 for (int i = 0; i < numberofPlayer; ++i)
                 {
-                    Label playerlabel = playersLabel[i];
-                    playerlabel.Visible = true;
-
-                    ComboBox playerSelection = playersSelection[i];
-                    playerSelection.Visible = true;
-                    playerSelection.Text = null;
+                    playersLabel[i].Visible = true;
+                    
+                    playersSelection[i].Visible = true;
+                    playersSelection[i].Text = null;
                 }
             }
         }
@@ -78,14 +72,13 @@ namespace ADGP125
 
             for (int i = 0; i < numberofPlayer; ++i)
             {
-                ComboBox playerSelection = playersSelection[i];
-                player_type[i] = playerSelection.Text;
+                player_type[i] = playersSelection[i].Text;
             }
 
             user = new Player(numberofPlayer, player_type);
-            SerializeUser.Serialize("UserInfo.xml", user);
+            SerializeUser.Serialize(UserNameTextBox.Text + ".xml", user);
 
-            Form2 f = new Form2();
+            Login f = new Login();
             this.Hide();
             f.Show();
             

@@ -13,7 +13,13 @@ namespace ADGP125
 
     interface IDamager
     {
-        
+        int damage { get; }
+    }
+
+    interface IAbility : IDamager
+    {
+        void nomalAttack();
+        void specialAttack();
     }
 
 }

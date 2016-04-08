@@ -12,7 +12,6 @@ C:\Users\tran.nguyen\Documents\Visual Studio 2015\Projects\ADGP125\ADGP125\obj\D
 C:\Users\tran.nguyen\Desktop\Tran_Folder\ADGP125\ADGP125\bin\Debug\ADGP125.exe.config
 C:\Users\tran.nguyen\Desktop\Tran_Folder\ADGP125\ADGP125\obj\Debug\ADGP125.exe
 C:\Users\tran.nguyen\Desktop\Tran_Folder\ADGP125\ADGP125\obj\Debug\ADGP125.pdb
-C:\Users\tran.nguyen\Desktop\Tran_Folder\ADGP125\ADGP125\obj\Debug\ADGP125.csprojResolveAssemblyReference.cache
 C:\Users\tran.nguyen\Desktop\Tran_Folder\ADGP125\ADGP125\obj\Debug\ADGP125.Combat.resources
 C:\Users\tran.nguyen\Desktop\Tran_Folder\ADGP125\ADGP125\obj\Debug\ADGP125.Form1.resources
 C:\Users\tran.nguyen\Desktop\Tran_Folder\ADGP125\ADGP125\obj\Debug\ADGP125.Form2.resources
@@ -32,3 +31,5 @@ C:\Users\Tran\Desktop\AIE WorkShop\ADGP125\ADGP125\obj\Debug\ADGP125.Form2.resou
 C:\Users\Tran\Desktop\AIE WorkShop\ADGP125\ADGP125\obj\Debug\ADGP125.Properties.Resources.resources
 C:\Users\Tran\Desktop\AIE WorkShop\ADGP125\ADGP125\obj\Debug\ADGP125.csproj.GenerateResource.Cache
 C:\Users\Tran\Desktop\AIE WorkShop\ADGP125\ADGP125\obj\Debug\ADGP125.Login.resources
+C:\Users\tran.nguyen\Desktop\Tran_Folder\ADGP125\ADGP125\obj\Debug\ADGP125.Login.resources
+C:\Users\tran.nguyen\Desktop\Tran_Folder\ADGP125\ADGP125\obj\Debug\ADGP125.csprojResolveAssemblyReference.cache

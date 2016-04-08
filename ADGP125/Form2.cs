@@ -16,5 +16,17 @@ namespace ADGP125
         {
             InitializeComponent();
         }
+
+        private void Enemy_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CombatButton_Click(object sender, EventArgs e)
+        {
+            HealthLabel state = new HealthLabel();
+            this.Hide();
+            state.Show();
+        }
     }
 }

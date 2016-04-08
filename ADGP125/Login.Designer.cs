@@ -28,57 +28,78 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.LoginButton = new System.Windows.Forms.Button();
+            this.UseName = new System.Windows.Forms.Label();
+            this.UseNameTextBox = new System.Windows.Forms.RichTextBox();
+            this.RegisterButton = new System.Windows.Forms.Button();
+            this.Invalid = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // LoginButton
             // 
-            this.button1.Location = new System.Drawing.Point(121, 212);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.LoginButton.Location = new System.Drawing.Point(70, 134);
+            this.LoginButton.Margin = new System.Windows.Forms.Padding(2);
+            this.LoginButton.Name = "LoginButton";
+            this.LoginButton.Size = new System.Drawing.Size(91, 38);
+            this.LoginButton.TabIndex = 0;
+            this.LoginButton.Text = "Login";
+            this.LoginButton.UseVisualStyleBackColor = true;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
-            // label1
+            // UseName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(138, 78);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.UseName.AutoSize = true;
+            this.UseName.Location = new System.Drawing.Point(93, 63);
+            this.UseName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.UseName.Name = "UseName";
+            this.UseName.Size = new System.Drawing.Size(54, 13);
+            this.UseName.TabIndex = 1;
+            this.UseName.Text = "UseName";
             // 
-            // button2
+            // UseNameTextBox
             // 
-            this.button2.Location = new System.Drawing.Point(121, 334);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.UseNameTextBox.Location = new System.Drawing.Point(45, 106);
+            this.UseNameTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.UseNameTextBox.Name = "UseNameTextBox";
+            this.UseNameTextBox.Size = new System.Drawing.Size(152, 24);
+            this.UseNameTextBox.TabIndex = 3;
+            this.UseNameTextBox.Text = "";
             // 
-            // richTextBox1
+            // RegisterButton
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(75, 113);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(166, 37);
-            this.richTextBox1.TabIndex = 3;
-            this.richTextBox1.Text = "hii";
+            this.RegisterButton.Location = new System.Drawing.Point(70, 239);
+            this.RegisterButton.Margin = new System.Windows.Forms.Padding(2);
+            this.RegisterButton.Name = "RegisterButton";
+            this.RegisterButton.Size = new System.Drawing.Size(91, 38);
+            this.RegisterButton.TabIndex = 4;
+            this.RegisterButton.Text = "Register";
+            this.RegisterButton.UseVisualStyleBackColor = true;
+            this.RegisterButton.Click += new System.EventHandler(this.RegisterButton_Click);
+            // 
+            // Invalid
+            // 
+            this.Invalid.AutoSize = true;
+            this.Invalid.ForeColor = System.Drawing.Color.Red;
+            this.Invalid.Location = new System.Drawing.Point(76, 91);
+            this.Invalid.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Invalid.Name = "Invalid";
+            this.Invalid.Size = new System.Drawing.Size(94, 13);
+            this.Invalid.TabIndex = 5;
+            this.Invalid.Text = "Invalid User Name";
+            this.Invalid.Visible = false;
+            this.Invalid.Click += new System.EventHandler(this.Invalid_Click);
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(338, 416);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(254, 338);
+            this.Controls.Add(this.Invalid);
+            this.Controls.Add(this.RegisterButton);
+            this.Controls.Add(this.UseNameTextBox);
+            this.Controls.Add(this.UseName);
+            this.Controls.Add(this.LoginButton);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Login";
             this.Text = "Login";
             this.ResumeLayout(false);
@@ -88,9 +109,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button LoginButton;
+        private System.Windows.Forms.Label UseName;
+        private System.Windows.Forms.RichTextBox UseNameTextBox;
+        private System.Windows.Forms.Button RegisterButton;
+        private System.Windows.Forms.Label Invalid;
     }
 }

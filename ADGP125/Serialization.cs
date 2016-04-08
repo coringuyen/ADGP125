@@ -40,7 +40,6 @@ namespace ADGP125
         public T Deserialize(string path) // load data
         {
             T t;
-           
             using (FileStream fs = File.OpenRead(@"..\..\SavedFiles\" + path)) //Same process as Serialize but instead of create we use OpenRead
             {
                 BinaryFormatter deserializer = new BinaryFormatter(); //Creates a new binaryFormatter that will give us access to the Deseralize function
