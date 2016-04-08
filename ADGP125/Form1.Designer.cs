@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.CreatePlayer = new System.Windows.Forms.Button();
             this.numberOfplayer = new System.Windows.Forms.Label();
-            this.Play = new System.Windows.Forms.Button();
+            this.Submit = new System.Windows.Forms.Button();
             this.PlayerNumber = new System.Windows.Forms.ComboBox();
             this.Player1 = new System.Windows.Forms.Label();
             this.Player2 = new System.Windows.Forms.Label();
@@ -47,6 +47,10 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -55,10 +59,9 @@
             // 
             // CreatePlayer
             // 
-            this.CreatePlayer.Location = new System.Drawing.Point(131, 180);
-            this.CreatePlayer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CreatePlayer.Location = new System.Drawing.Point(98, 146);
             this.CreatePlayer.Name = "CreatePlayer";
-            this.CreatePlayer.Size = new System.Drawing.Size(116, 34);
+            this.CreatePlayer.Size = new System.Drawing.Size(87, 28);
             this.CreatePlayer.TabIndex = 0;
             this.CreatePlayer.Text = "Create Player";
             this.CreatePlayer.UseVisualStyleBackColor = true;
@@ -67,23 +70,21 @@
             // numberOfplayer
             // 
             this.numberOfplayer.AutoSize = true;
-            this.numberOfplayer.Location = new System.Drawing.Point(127, 121);
-            this.numberOfplayer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.numberOfplayer.Location = new System.Drawing.Point(95, 98);
             this.numberOfplayer.Name = "numberOfplayer";
-            this.numberOfplayer.Size = new System.Drawing.Size(118, 17);
+            this.numberOfplayer.Size = new System.Drawing.Size(88, 13);
             this.numberOfplayer.TabIndex = 2;
             this.numberOfplayer.Text = "Number of Player";
             // 
-            // Play
+            // Submit
             // 
-            this.Play.Location = new System.Drawing.Point(129, 513);
-            this.Play.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Play.Name = "Play";
-            this.Play.Size = new System.Drawing.Size(116, 38);
-            this.Play.TabIndex = 4;
-            this.Play.Text = "Submit";
-            this.Play.UseVisualStyleBackColor = true;
-            this.Play.Click += new System.EventHandler(this.Play_Click);
+            this.Submit.Location = new System.Drawing.Point(97, 417);
+            this.Submit.Name = "Submit";
+            this.Submit.Size = new System.Drawing.Size(87, 31);
+            this.Submit.TabIndex = 4;
+            this.Submit.Text = "Submit";
+            this.Submit.UseVisualStyleBackColor = true;
+            this.Submit.Click += new System.EventHandler(this.Submit_Click);
             // 
             // PlayerNumber
             // 
@@ -92,19 +93,17 @@
             "2 ",
             "3 ",
             "4 "});
-            this.PlayerNumber.Location = new System.Drawing.Point(105, 141);
-            this.PlayerNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PlayerNumber.Location = new System.Drawing.Point(79, 115);
             this.PlayerNumber.Name = "PlayerNumber";
-            this.PlayerNumber.Size = new System.Drawing.Size(163, 24);
+            this.PlayerNumber.Size = new System.Drawing.Size(123, 21);
             this.PlayerNumber.TabIndex = 5;
             // 
             // Player1
             // 
             this.Player1.AutoSize = true;
-            this.Player1.Location = new System.Drawing.Point(47, 233);
-            this.Player1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Player1.Location = new System.Drawing.Point(35, 189);
             this.Player1.Name = "Player1";
-            this.Player1.Size = new System.Drawing.Size(56, 17);
+            this.Player1.Size = new System.Drawing.Size(42, 13);
             this.Player1.TabIndex = 6;
             this.Player1.Text = "Player1";
             this.Player1.Visible = false;
@@ -112,10 +111,9 @@
             // Player2
             // 
             this.Player2.AutoSize = true;
-            this.Player2.Location = new System.Drawing.Point(47, 296);
-            this.Player2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Player2.Location = new System.Drawing.Point(35, 240);
             this.Player2.Name = "Player2";
-            this.Player2.Size = new System.Drawing.Size(56, 17);
+            this.Player2.Size = new System.Drawing.Size(42, 13);
             this.Player2.TabIndex = 7;
             this.Player2.Text = "Player2";
             this.Player2.Visible = false;
@@ -123,10 +121,9 @@
             // Player3
             // 
             this.Player3.AutoSize = true;
-            this.Player3.Location = new System.Drawing.Point(47, 361);
-            this.Player3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Player3.Location = new System.Drawing.Point(35, 293);
             this.Player3.Name = "Player3";
-            this.Player3.Size = new System.Drawing.Size(56, 17);
+            this.Player3.Size = new System.Drawing.Size(42, 13);
             this.Player3.TabIndex = 8;
             this.Player3.Text = "Player3";
             this.Player3.Visible = false;
@@ -134,10 +131,9 @@
             // Player4
             // 
             this.Player4.AutoSize = true;
-            this.Player4.Location = new System.Drawing.Point(47, 428);
-            this.Player4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Player4.Location = new System.Drawing.Point(35, 348);
             this.Player4.Name = "Player4";
-            this.Player4.Size = new System.Drawing.Size(56, 17);
+            this.Player4.Size = new System.Drawing.Size(42, 13);
             this.Player4.TabIndex = 9;
             this.Player4.Text = "Player4";
             this.Player4.Visible = false;
@@ -150,10 +146,9 @@
             "Mage",
             "Healer",
             "Archer"});
-            this.Player1Selection.Location = new System.Drawing.Point(51, 254);
-            this.Player1Selection.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Player1Selection.Location = new System.Drawing.Point(38, 206);
             this.Player1Selection.Name = "Player1Selection";
-            this.Player1Selection.Size = new System.Drawing.Size(160, 24);
+            this.Player1Selection.Size = new System.Drawing.Size(121, 21);
             this.Player1Selection.TabIndex = 10;
             this.Player1Selection.Visible = false;
             // 
@@ -165,10 +160,9 @@
             "Mage",
             "Healer",
             "Archer"});
-            this.Player2Selection.Location = new System.Drawing.Point(51, 317);
-            this.Player2Selection.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Player2Selection.Location = new System.Drawing.Point(38, 258);
             this.Player2Selection.Name = "Player2Selection";
-            this.Player2Selection.Size = new System.Drawing.Size(160, 24);
+            this.Player2Selection.Size = new System.Drawing.Size(121, 21);
             this.Player2Selection.TabIndex = 11;
             this.Player2Selection.Visible = false;
             // 
@@ -180,10 +174,9 @@
             "Mage",
             "Healer",
             "Archer"});
-            this.Player3Selection.Location = new System.Drawing.Point(51, 382);
-            this.Player3Selection.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Player3Selection.Location = new System.Drawing.Point(38, 310);
             this.Player3Selection.Name = "Player3Selection";
-            this.Player3Selection.Size = new System.Drawing.Size(160, 24);
+            this.Player3Selection.Size = new System.Drawing.Size(121, 21);
             this.Player3Selection.TabIndex = 12;
             this.Player3Selection.Visible = false;
             // 
@@ -195,20 +188,18 @@
             "Mage",
             "Healer",
             "Archer"});
-            this.Player4Selection.Location = new System.Drawing.Point(51, 449);
-            this.Player4Selection.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Player4Selection.Location = new System.Drawing.Point(38, 365);
             this.Player4Selection.Name = "Player4Selection";
-            this.Player4Selection.Size = new System.Drawing.Size(160, 24);
+            this.Player4Selection.Size = new System.Drawing.Size(121, 21);
             this.Player4Selection.TabIndex = 13;
             this.Player4Selection.Visible = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(336, -1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(252, -1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(261, 394);
+            this.pictureBox1.Size = new System.Drawing.Size(196, 320);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
@@ -216,10 +207,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(605, -1);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(454, -1);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(240, 394);
+            this.pictureBox2.Size = new System.Drawing.Size(180, 320);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
@@ -227,10 +217,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(853, -1);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Location = new System.Drawing.Point(640, -1);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(240, 394);
+            this.pictureBox3.Size = new System.Drawing.Size(180, 320);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 16;
             this.pictureBox3.TabStop = false;
@@ -238,10 +227,9 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(1101, -1);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Location = new System.Drawing.Point(826, -1);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(227, 394);
+            this.pictureBox4.Size = new System.Drawing.Size(170, 320);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 17;
             this.pictureBox4.TabStop = false;
@@ -249,29 +237,69 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(145, 52);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(109, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 17);
+            this.label1.Size = new System.Drawing.Size(57, 13);
             this.label1.TabIndex = 18;
             this.label1.Text = "UserName";
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(105, 83);
+            this.richTextBox1.Location = new System.Drawing.Point(79, 67);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(163, 26);
+            this.richTextBox1.Size = new System.Drawing.Size(123, 22);
             this.richTextBox1.TabIndex = 19;
             this.richTextBox1.Text = "";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(320, 337);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(34, 13);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Mage";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(515, 337);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(41, 13);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Warrior";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(697, 337);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(38, 13);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Healer";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(888, 337);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(57, 13);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "UserName";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1344, 686);
+            this.ClientSize = new System.Drawing.Size(1008, 557);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.Play);
+            this.Controls.Add(this.Submit);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -287,7 +315,6 @@
             this.Controls.Add(this.PlayerNumber);
             this.Controls.Add(this.numberOfplayer);
             this.Controls.Add(this.CreatePlayer);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -303,7 +330,7 @@
 
         private System.Windows.Forms.Button CreatePlayer;
         private System.Windows.Forms.Label numberOfplayer;
-        private System.Windows.Forms.Button Play;
+        private System.Windows.Forms.Button Submit;
         private System.Windows.Forms.ComboBox PlayerNumber;
         private System.Windows.Forms.Label Player1;
         private System.Windows.Forms.Label Player2;
@@ -319,6 +346,10 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
 

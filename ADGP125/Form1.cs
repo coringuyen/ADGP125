@@ -71,7 +71,7 @@ namespace ADGP125
             }
         }
 
-        private void Play_Click(object sender, EventArgs e)
+        private void Submit_Click(object sender, EventArgs e)
         {
             int numberofPlayer = int.Parse(PlayerNumber.Text);
             string[] player_type = new string[numberofPlayer];
