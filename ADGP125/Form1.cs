@@ -22,11 +22,6 @@ namespace ADGP125
         }
         
 
-        private void load(object sender, EventArgs e)
-        {
-            user = SerializeUser.Deserialize("UserInfo.bin");
-        }
-
         List<Label> playersLabel = new List<Label>();
         List<ComboBox> playersSelection = new List<ComboBox>();
 
@@ -35,12 +30,10 @@ namespace ADGP125
             playersLabel.Add(Player1);
             playersLabel.Add(Player2);
             playersLabel.Add(Player3);
-            playersLabel.Add(Player4);
 
             playersSelection.Add(Player1Selection);
             playersSelection.Add(Player2Selection);
             playersSelection.Add(Player3Selection);
-            playersSelection.Add(Player4Selection);
         }
 
         private void CreatePlayer_Click(object sender, EventArgs e)
@@ -77,7 +70,7 @@ namespace ADGP125
 
             user = new Player(numberofPlayer, player_type);
             SerializeUser.Serialize(UserNameTextBox.Text + ".xml", user);
-
+            
             Login f = new Login();
             this.Hide();
             f.Show();

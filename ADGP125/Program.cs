@@ -16,7 +16,7 @@ namespace ADGP125
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            new Login().Show();
+            new HealthLabel().Show();
             Application.Run();
         }
     }

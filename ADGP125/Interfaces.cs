@@ -16,10 +16,10 @@ namespace ADGP125
         int damage { get; }
     }
 
-    interface IAbility : IDamager
+    interface IAbility
     {
-        void nomalAttack();
-        void specialAttack();
+        void nomalAttack(int damge);
+        void specialAttack(int damage);
     }
 
 }

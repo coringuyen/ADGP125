@@ -36,13 +36,13 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.Player2C = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.Player3C = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.progressBar3 = new System.Windows.Forms.ProgressBar();
@@ -105,6 +105,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(240, 507);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 99);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
@@ -113,6 +114,7 @@
             this.pictureBox2.Location = new System.Drawing.Point(662, 507);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 99);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
             // 
@@ -125,14 +127,14 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Health";
             // 
-            // label3
+            // Player2C
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(475, 528);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "label1";
+            this.Player2C.AutoSize = true;
+            this.Player2C.Location = new System.Drawing.Point(475, 528);
+            this.Player2C.Name = "Player2C";
+            this.Player2C.Size = new System.Drawing.Size(35, 13);
+            this.Player2C.TabIndex = 9;
+            this.Player2C.Text = "label1";
             // 
             // button3
             // 
@@ -164,6 +166,7 @@
             this.pictureBox3.Location = new System.Drawing.Point(1058, 507);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 99);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 17;
             this.pictureBox3.TabStop = false;
             // 
@@ -176,14 +179,14 @@
             this.label4.TabIndex = 16;
             this.label4.Text = "Health";
             // 
-            // label5
+            // Player3C
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(871, 528);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "label1";
+            this.Player3C.AutoSize = true;
+            this.Player3C.Location = new System.Drawing.Point(871, 528);
+            this.Player3C.Name = "Player3C";
+            this.Player3C.Size = new System.Drawing.Size(29, 13);
+            this.Player3C.TabIndex = 15;
+            this.Player3C.Text = "label";
             // 
             // button5
             // 
@@ -244,13 +247,13 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.Player3C);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.progressBar3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.Player2C);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.progressBar2);
@@ -278,23 +281,23 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label Player1C;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label Player2C;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ProgressBar progressBar2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label Player3C;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.ProgressBar progressBar3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
+        public System.Windows.Forms.Label Player1C;
     }
 }

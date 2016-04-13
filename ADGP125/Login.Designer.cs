@@ -111,8 +111,8 @@
 
         private System.Windows.Forms.Button LoginButton;
         private System.Windows.Forms.Label UseName;
-        private System.Windows.Forms.RichTextBox UseNameTextBox;
         private System.Windows.Forms.Button RegisterButton;
         private System.Windows.Forms.Label Invalid;
+        public System.Windows.Forms.RichTextBox UseNameTextBox;
     }
 }

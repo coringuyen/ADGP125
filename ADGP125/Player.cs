@@ -9,8 +9,8 @@ namespace ADGP125
     [Serializable()]
     class Player
     {
-        private string[] characterType;
-        private int numberofPlayer;
+        public string[] characterType;
+        protected int numberofPlayer;
 
         public Player(int number_of_player, string[] Type)
         {
